@@ -1,11 +1,13 @@
 # go-logger
-Loggs your data to stdout and log folder in sutable for Elastic search format
+Logs your data to stdout and log folder in suitable for Elastic search format
 
 
 ## Usage
-package main
+Add APP_NAME="Some name" to project .env file
+Make sure you have ./logs directory
 
 ```
+package main
 import "github.com/appio-go/logger"
 
 func main(){

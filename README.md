@@ -9,6 +9,16 @@ Make sure you have ./logs directory
 ```
 package main
 import "github.com/appio-go/logger"
+import "github.com/joho/godotenv"
+
+
+func init() {
+	if err := godotenv.Load(); err != nil {
+		log.Print("No .env file found")
+	}
+	rand.Seed(time.Now().UnixNano())
+}
+
 
 func main(){
 	var l logger.Logger
